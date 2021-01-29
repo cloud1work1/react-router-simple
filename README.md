@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Use of React-Router DOM
+- &lt;HashRouter&gt;
+    <div>
+        <ul>
+            <li><NavLink to="/path">COmponent1</NavLink></li>
+            <li><NavLink to="/path2">COmponent2</NavLink></li>
+            <li><NavLink to="/">COmponent3</NavLink></li>
+        </ul>
+        <div className="content">
+            <Route path="/path" component={Component1}/>
+            <Route path="/path2" component={Component2}/>
+            <Route exact path="/" component={Component3}/>
+        </div>
+    </div>
+  </hashRouter>
+
 ## Available Scripts
 
 In the project directory, you can run:
